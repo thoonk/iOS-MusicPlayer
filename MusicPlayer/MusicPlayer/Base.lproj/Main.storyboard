@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MusicPlayer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="16w-8b-i0l">
+                                <rect key="frame" x="107" y="94" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="3nd-qu-Wnr"/>
+                                    <constraint firstAttribute="width" constant="200" id="Icv-lU-GvP"/>
+                                </constraints>
+                                <state key="normal" image="button_play"/>
+                                <state key="selected" image="button_pause"/>
+                                <connections>
+                                    <action selector="touchUpPlayPauseButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YyY-gy-pLz"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rt2-w4-0Jt">
+                                <rect key="frame" x="169" y="314" width="76" height="21"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="iuo-7n-u3Y">
+                                <rect key="frame" x="14" y="351" width="386" height="31"/>
+                                <color key="tintColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="sliderValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="3Rf-8O-lLz"/>
+                                </connections>
+                            </slider>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="iuo-7n-u3Y" firstAttribute="top" secondItem="rt2-w4-0Jt" secondAttribute="bottom" constant="20" id="01j-2Z-ryl"/>
+                            <constraint firstItem="rt2-w4-0Jt" firstAttribute="top" secondItem="16w-8b-i0l" secondAttribute="bottom" constant="10" id="3vY-mv-MY3"/>
+                            <constraint firstItem="rt2-w4-0Jt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5X4-wJ-hoW"/>
+                            <constraint firstItem="iuo-7n-u3Y" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EN5-Vn-qYm"/>
+                            <constraint firstItem="16w-8b-i0l" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="200" id="GQV-5r-5fm"/>
+                            <constraint firstItem="rt2-w4-0Jt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ipr-JT-YPd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="iuo-7n-u3Y" secondAttribute="trailing" constant="16" id="Jeo-0R-Qpy"/>
+                            <constraint firstItem="iuo-7n-u3Y" firstAttribute="top" secondItem="rt2-w4-0Jt" secondAttribute="bottom" constant="16" id="KO7-CS-FLt"/>
+                            <constraint firstItem="rt2-w4-0Jt" firstAttribute="top" secondItem="16w-8b-i0l" secondAttribute="bottom" constant="20" id="KfC-QH-OJM"/>
+                            <constraint firstItem="rt2-w4-0Jt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Kwy-f3-6XV"/>
+                            <constraint firstItem="iuo-7n-u3Y" firstAttribute="top" secondItem="rt2-w4-0Jt" secondAttribute="bottom" constant="15" id="Vlc-ES-JJg"/>
+                            <constraint firstItem="iuo-7n-u3Y" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="b8A-Fh-Pkc"/>
+                            <constraint firstItem="iuo-7n-u3Y" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cuO-PV-CL4"/>
+                            <constraint firstItem="iuo-7n-u3Y" firstAttribute="top" secondItem="rt2-w4-0Jt" secondAttribute="bottom" constant="16" id="eGs-57-c6n"/>
+                            <constraint firstItem="16w-8b-i0l" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eee-5a-VD8"/>
+                            <constraint firstItem="16w-8b-i0l" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="fg8-6Y-MjR"/>
+                            <constraint firstItem="16w-8b-i0l" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="200" id="h0r-yc-L9K"/>
+                            <constraint firstItem="rt2-w4-0Jt" firstAttribute="top" secondItem="16w-8b-i0l" secondAttribute="bottom" constant="20" id="sRd-ed-kJc"/>
+                            <constraint firstItem="16w-8b-i0l" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="v7a-ha-hRa"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="playPauseButton" destination="16w-8b-i0l" id="mAU-qw-Vu5"/>
+                        <outlet property="progressSlider" destination="iuo-7n-u3Y" id="0f0-g9-4qh"/>
+                        <outlet property="timeLabel" destination="rt2-w4-0Jt" id="Jof-Ts-FTp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140.57971014492756" y="138.61607142857142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="button_pause" width="185" height="185"/>
+        <image name="button_play" width="187" height="189"/>
+    </resources>
+</document>
