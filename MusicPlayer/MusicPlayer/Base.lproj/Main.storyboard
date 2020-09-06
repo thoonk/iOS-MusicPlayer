@@ -46,6 +46,8 @@
                             <constraint firstItem="iuo-7n-u3Y" firstAttribute="top" secondItem="rt2-w4-0Jt" secondAttribute="bottom" constant="20" id="01j-2Z-ryl"/>
                             <constraint firstItem="rt2-w4-0Jt" firstAttribute="top" secondItem="16w-8b-i0l" secondAttribute="bottom" constant="10" id="3vY-mv-MY3"/>
                             <constraint firstItem="rt2-w4-0Jt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5X4-wJ-hoW"/>
+                            <constraint firstItem="16w-8b-i0l" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="107" id="5tT-AB-RcA"/>
+                            <constraint firstItem="16w-8b-i0l" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="7o2-ra-uTc"/>
                             <constraint firstItem="iuo-7n-u3Y" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EN5-Vn-qYm"/>
                             <constraint firstItem="16w-8b-i0l" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="200" id="GQV-5r-5fm"/>
                             <constraint firstItem="rt2-w4-0Jt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ipr-JT-YPd"/>
@@ -60,6 +62,7 @@
                             <constraint firstItem="16w-8b-i0l" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eee-5a-VD8"/>
                             <constraint firstItem="16w-8b-i0l" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="fg8-6Y-MjR"/>
                             <constraint firstItem="16w-8b-i0l" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="200" id="h0r-yc-L9K"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="16w-8b-i0l" secondAttribute="trailing" constant="107" id="iUX-Db-JFn"/>
                             <constraint firstItem="rt2-w4-0Jt" firstAttribute="top" secondItem="16w-8b-i0l" secondAttribute="bottom" constant="20" id="sRd-ed-kJc"/>
                             <constraint firstItem="16w-8b-i0l" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="v7a-ha-hRa"/>
                         </constraints>
