@@ -1,2 +1,2 @@
-# IOS_BoostCourse
+# iOS
 - MusicPlayer Project
